@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gràcies</title>
+    <link rel="stylesheet" href="../CSS/codi.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rae2jxp.css">
+</head>
+
+<body>
+    <header>
+        <section id="home">
+            <p>Arxiu</p>
+        </section>
+        <section id="aboutme">
+            <p>Nolla</p>
+        </section>
+        <section id="contact">
+            <p>Contacte</p>
+        </section>
+    </header>
+
+    <div class="custom-cursor"></div>
+
+    <!-- Carrusel 3D -->
+    <div class="spinner-container" id="spinnerContainer">
+        <div class="spinner-wheel" id="spinnerWheel">
+            <!-- Proyecto 0 -->
+            <div class="card" style="--i: 0;" data-images="../IMG/2026.jpg, ../IMG/.jpg, ../IMG/.jpg,">
+                <img src="../IMG/2026.jpg" alt="2026">
+            </div>
+            <!-- Proyecto 1 -->
+            <div class="card" style="--i: 1;" data-images="../IMG/video.mp4, ../IMG/pegatinas.jpg, ../IMG/borrosa.jpg, ../IMG/staff.jpg,">
+                <video src="../IMG/video.mp4" autoplay muted loop playsinline></video>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="card" style="--i: 2;" data-images="../IMG/bricolagge.jpg, ../IMG/9830.JPG, ../IMG/9834.JPG,">
+                <img src="../IMG/bricolagge.jpg" alt="bricolage">
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="card" style="--i: 3;" data-images="../IMG/caliu.jpg, ../IMG/caliu1.jpg, ../IMG/caliu2.jpg,  ../IMG/caliu3.jpg,">
+                <img src="../IMG/caliu.jpg" alt="caliu">
+            </div>
+          
+            <!-- Proyecto 4 (Vídeo) -->
+            <div class="card" style="--i: 4;" data-images="../IMG/1.mp4,">
+                <video src="../IMG/1.mp4" autoplay muted loop playsinline></video>
+            </div>
+            <!-- Proyecto 5 -->
+            <div class="card" style="--i: 5;" data-images="../IMG/gracies%20final.jpg, ../IMG/final.mp4, ../IMG/finaln.mp4,">
+                <img src="../IMG/gracies%20final.jpg" alt="Proyecto 7">
+            </div>
+            <!-- Proyecto 6 (Vídeo) -->
+            <div class="card" style="--i: 6;" data-images="../IMG/video30s.mp4, ../IMG/mockupparada.mp4, ../IMG/mockupparada2.mp4,">
+                <video src="../IMG/video30s.mp4" autoplay muted loop playsinline></video>
+            </div>
+            <!-- Proyecto 7 -->
+            <div class="card" style="--i: 7;" data-images="../IMG/alcoi.jpg, ../IMG/IMG_9876.jpg, ../IMG/IMG_9913.jpg, ../IMG/IMG_9970.jpg,">
+                <img src="../IMG/alcoi.jpg" alt="alcoi">
+            </div>
+              <!-- Proyecto 8 -->
+            <div class="card" style="--i: 8;" data-images="../IMG/raly2.mp4, ../IMG/raly1.mp4,">
+                <video src="../IMG/raly2.mp4" autoplay muted loop playsinline></video>
+            </div>
+            <!-- Proyecto 9 -->
+            <div class="card" style="--i: 9;" data-images="../IMG/mountain.JPG, ../IMG/19.jpg, ../IMG/1.jpg">
+                <img src="../IMG/mountain.JPG" alt="fotografia">
+            </div>
+            <!-- Proyecto 10 (Vídeo) -->
+            <div class="card" style="--i: 10;" data-images="../IMG/MCLAREn.mp4, ../IMG/MCLAREn2.mp4, ../IMG/mclaren3.mp4">
+                <video src="../IMG/MCLAREn.mp4" autoplay muted loop playsinline></video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bloque de información de contacto -->
+    <div id="contactInfo" class="contact-container">
+        <div class="contact-content">
+            <a href="mailto:gràciesgràcies@gmail.com" class="contact-link">gràciesgràcies@gmail.com</a>
+            <a href="tel:+34123456789" class="contact-link">628768210</a>
+        </div>
+    </div>
+
+    <!-- Vídeos de fondo -->
+    <section class="sec1">
+        <div class="video-container">
+            <video autoplay muted loop playsinline id="videofons" class="bg-video">
+                <source src="../IMG/final.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline id="videofons-dark" class="bg-video bg-video--dark">
+                <source src="../IMG/finaln.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- Botón flotante inferior -->
+    <button id="themeToggle" class="floating-theme-toggle" aria-label="Cambiar tema">
+        <span class="icon"></span>
+    </button>
+
+    <!-- MODAL SLIDER DE PROYECTO -->
+    <div id="projectModal" class="project-modal" aria-hidden="true">
+        <div class="modal-media-wrapper" id="modalMediaWrapper"></div>
+
+        <!-- Botones circulares y contador centrados abajo -->
+        <div class="modal-controls-bottom">
+            <button class="modal-circle-btn" id="modalPrev" aria-label="Anterior">&#10094;</button>
+            <span class="modal-counter" id="modalCounter">1 / 1</span>
+            <button class="modal-circle-btn" id="modalNext" aria-label="Siguiente">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="../JS/codi.js"></script>
+</body>
+
+</html>
